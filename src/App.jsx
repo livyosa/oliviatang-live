@@ -1,14 +1,17 @@
 import Header from './components/Header';
-
+import Hero from './components/Hero';
+import Projects from './components/Projects';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 export default function App() {
   return (
-    <>
+    <div id="top">
       <Header />
-      <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100 pt-24">
-        <h1 className="text-4xl font-bold text-gray-800 mb-4">OLIVIA TANG</h1>
-        <p className="text-lg text-gray-600">Front-End Developer & UX Designer</p>
-      </div>
-    </>
+      <Hero />
+      <Projects />
+      <Contact />
+      <Footer />
+    </div>
   );
 }
