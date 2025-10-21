@@ -6,7 +6,7 @@ export default function Projects() {
   return (
     <section
       id="projects-section"
-      className="max-w-[62.5rem] mx-auto py-40 text-left mt-4 px-4 bg-gradient-to-b from-[#fafafa] to-[#f1f1f1]"
+      className="max-w-[62.5rem] mx-auto pt-32 pb-12 text-left mt-2 px-4 bg-[#fafafa]"
     >
       {/* Title slides in from the LEFT */}
       <motion.h2
