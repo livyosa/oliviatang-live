@@ -1,3 +1,6 @@
+// Homepage uses components to structure. Not like GM page.
+
+
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Hero from "./components/Hero";

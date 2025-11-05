@@ -6,7 +6,7 @@ export default function Contact() {
   return (
     <section
       id="contact-section"
-      className="flex flex-col items-center text-center gap-6 py-24 px-4 bg-[#fafafa]"
+      className="flex flex-col items-center text-center gap-6 py-24 px-4"
     >
       <h2 className="text-2xl font-extrabold tracking-[0.15em] text-gray-800">
         Get in Touch
