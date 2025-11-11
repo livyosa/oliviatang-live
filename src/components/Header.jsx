@@ -1,8 +1,10 @@
 import { motion } from "framer-motion";
+import { Link, useLocation } from "react-router-dom";
 
 export default function Header() {
-  // Animation settings
   const navLinks = ["Projects", "Contact"];
+  const location = useLocation();
+
   const variants = {
     hidden: { opacity: 0, y: -10 },
     visible: (i) => ({
@@ -12,19 +14,31 @@ export default function Header() {
     }),
   };
 
+  // If on homepage, scroll to top. If on other page, go home.
+  const handleLogoClick = (e) => {
+    if (location.pathname === "/") {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  };
+
   return (
     <header className="fixed top-0 left-0 right-0 w-full z-[999] bg-[#f8f8f8] shadow-md py-4">
       <div className="max-w-[62.5rem] mx-auto flex justify-between items-center px-6">
         {/* Logo with fade-in */}
-        <motion.a
-          href="#top"
+        <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: "easeOut" }}
-          className="font-bold text-xl text-gray-800 no-underline hover:text-gray-500 transition-colors"
         >
-          OT
-        </motion.a>
+          <Link
+            to="/"
+            onClick={handleLogoClick}
+            className="font-bold text-xl text-gray-800 no-underline hover:text-gray-500 transition-colors"
+          >
+            OT
+          </Link>
+        </motion.div>
 
         {/* Animated navigation links */}
         <nav>
