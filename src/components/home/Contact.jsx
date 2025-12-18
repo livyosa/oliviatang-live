@@ -1,6 +1,7 @@
-import emailIcon from "../assets/images/email.svg";
-import gitIcon from "../assets/images/git.svg";
-import linkedinIcon from "../assets/images/ri_linkedin-box-line.svg";
+import emailIcon from "../../assets/images/email.svg";
+import gitIcon from "../../assets/images/git.svg";
+import linkedinIcon from "../../assets/images/ri_linkedin-box-line.svg";
+
 
 export default function Contact() {
   return (

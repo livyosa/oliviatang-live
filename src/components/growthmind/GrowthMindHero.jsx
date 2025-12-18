@@ -1,4 +1,4 @@
-import heroImage from "../assets/images/growthmind-hero.png";
+import heroImage from "../../assets/images/growthmind-hero.png";
 
 export default function GrowthMindHero() {
   return (

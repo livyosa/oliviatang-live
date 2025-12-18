@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
-import defaultImg from "../assets/images/growthmind.png";
-import hoverImg from "../assets/images/growthmind-hover.svg";
+import defaultImg from "../../assets/images/growthmind.png";
+import hoverImg from "../../assets/images/growthmind-hover.svg";
+
 import { Link } from "react-router-dom";
 
 export default function Projects() {

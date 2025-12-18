@@ -1,6 +1,7 @@
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-import GrowthMindHero from "../components/GrowthMindHero";
+import GrowthMindHeader from "../components/growthmind/GrowthMindHeader";
+import GrowthMindFooter from "../components/growthmind/GrowthMindFooter";
+import GrowthMindHero from "../components/growthmind/GrowthMindHero";
+
 
 export default function GrowthMind() {
   return (
