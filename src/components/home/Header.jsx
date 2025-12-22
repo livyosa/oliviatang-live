@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
+
 
 export default function Header() {
   const navLinks = ["Projects", "Contact"];
-  const location = useLocation();
 
   const variants = {
     hidden: { opacity: 0, y: -10 },
@@ -15,12 +15,12 @@ export default function Header() {
   };
 
   // If on homepage, scroll to top. If on other page, go home.
-  const handleLogoClick = (e) => {
-    if (location.pathname === "/") {
-      e.preventDefault();
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    }
-  };
+const handleLogoClick = () => {
+  setTimeout(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, 0);
+};
+
 
   return (
     <header className="fixed top-0 left-0 right-0 w-full z-[999] bg-[#f8f8f8] shadow-md py-4">
