@@ -1,31 +1,55 @@
-import heroImage from "../../assets/images/growthmind-hero.png";
+import phones from "../../assets/images/growthmind-phones.png";
 
-export default function GrowthMindHero() {
+import { motion } from "framer-motion";
+
+export default function Hero() {
   return (
-    <section className="flex flex-col md:flex-row items-center justify-between gap-10 mb-20">
-      {/* Left text */}
-      <div className="flex-1 text-left">
-        <p className="text-gray-600 text-lg mb-2">A moment at a time.</p>
-        <h1
-          className="text-5xl font-extrabold mb-4"
-          style={{ color: "#3A5A15" }}
-        >
-          GrowthMind
-        </h1>
-        <p className="text-gray-700 max-w-md">
-          A productivity and habit-tracking app designed to make self-growth feel
-          fun and achievable.
-        </p>
-      </div>
+    <section className="relative h-screen overflow-hidden bg-neutral-950 text-white flex items-center justify-center">
+      
+      {/* Floating background */}
+      <motion.div
+        className="absolute top-20 left-16 w-28 h-28 bg-emerald-400/20 rounded-full blur-2xl"
+        animate={{ y: [0, -25, 0] }}
+        transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
+      />
 
-      {/* Right image */}
-      <div className="flex-1 flex justify-center items-center">
-        <img
-          src={heroImage}
-          alt="GrowthMind app mockups"
-          className="w-full max-w-[24rem] rounded-2xl"
-        />
-      </div>
+      <motion.div
+        className="absolute bottom-32 right-20 w-36 h-36 bg-green-500/20 rounded-full blur-2xl"
+        animate={{ y: [0, 30, 0] }}
+        transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
+      />
+
+{/* Hero content wrapper */}
+<div className="relative z-10 flex flex-col items-center text-center px-6">
+
+  {/* Hero text */}
+  <motion.div
+    initial={{ opacity: 0, y: 30 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.8, ease: "easeOut" }}
+    className="max-w-xl"
+  >
+    <h1 className="text-5xl md:text-6xl font-bold mb-4">
+      GrowthMind
+    </h1>
+    <p className="text-neutral-300 text-lg">
+      Building habits through clarity, structure, and calm.
+    </p>
+  </motion.div>
+
+  {/* Hero image */}
+  <motion.img
+    src={phones}
+    alt="GrowthMind app screens"
+    initial={{ opacity: 0, y: 40 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ delay: 0.4, duration: 0.8 }}
+    className="mt-12 w-full max-w-4xl"
+  />
+
+</div>
+
+
     </section>
   );
 }
