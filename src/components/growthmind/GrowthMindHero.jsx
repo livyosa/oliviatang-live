@@ -4,17 +4,17 @@ import { motion } from "framer-motion";
 
 export default function Hero() {
   return (
-    <section className="relative h-screen overflow-hidden bg-neutral-950 text-white flex items-center justify-center">
+<section className="relative h-screen overflow-hidden bg-[#FFF6DB] text-neutral-900 flex items-center justify-center">
       
       {/* Floating background */}
       <motion.div
-        className="absolute top-20 left-16 w-28 h-28 bg-emerald-400/20 rounded-full blur-2xl"
+        className="absolute top-20 left-16 w-28 h-28 bg-emerald-700/10 rounded-full blur-2xl"
         animate={{ y: [0, -25, 0] }}
         transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
       />
 
       <motion.div
-        className="absolute bottom-32 right-20 w-36 h-36 bg-green-500/20 rounded-full blur-2xl"
+        className="absolute bottom-32 right-20 w-36 h-36 bg-green-700/10 rounded-full blur-2xl"
         animate={{ y: [0, 30, 0] }}
         transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
       />
@@ -32,7 +32,7 @@ export default function Hero() {
     <h1 className="text-5xl md:text-6xl font-bold mb-4">
       GrowthMind
     </h1>
-    <p className="text-neutral-300 text-lg">
+<p className="text-neutral-700 text-lg">
       Building habits through clarity, structure, and calm.
     </p>
   </motion.div>
