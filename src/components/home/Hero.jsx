@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import heroImg from "../../assets/images/hero.png";
 
 
 export default function Hero() {
@@ -17,7 +16,7 @@ export default function Hero() {
       OLIVIA TANG
     </h1>
     <p className="text-xl text-gray-500 mb-5 leading-relaxed">
-      Front-End Developer &amp; UX Designer
+      UI &amp; UX Designer
     </p>
     <motion.a
       href="#projects-section"
@@ -39,7 +38,7 @@ export default function Hero() {
     <img
       src={heroImg}
       alt="Olivia Tang"
-      className="w-full max-w-[22rem] h-auto"
+      className="w-full max-w-[16rem] h-auto opacity-80"
       loading="lazy"
     />
   </motion.div>

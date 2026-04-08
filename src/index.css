@@ -20,3 +20,22 @@ body {
   scroll-behavior: smooth;
 }
 
+/* === OT hover bounce animation === */
+.ot-bounce {
+  display: inline-block;
+  pointer-events: auto; /* keeps hover isolated to text only */
+}
+
+@keyframes bounce-hover {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+.ot-bounce:hover {
+  animation: bounce-hover 0.4s ease-in-out;
+  cursor: pointer;
+}
