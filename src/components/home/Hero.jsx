@@ -1,10 +1,13 @@
 import { motion } from "framer-motion";
+import heroImg from "../../assets/images/hero.png";
 
 
 export default function Hero() {
   return (
-    <section className="relative pt-32 pb-16 px-4 bg-[#fafafa] overflow-hidden">
-      <div className="max-w-[62.5rem] mx-auto flex flex-wrap md:flex-nowrap items-center justify-center gap-12">
+    <section className="relative pt-32 pb-20 bg-[#fafafa] overflow-hidden">
+      <div className="max-w-[62.5rem] mx-auto px-6 flex items-center justify-between gap-12">
+
+
   {/* Text content animates from the left */}
   <motion.div
     className="flex-1 max-w-lg md:w-[55%]"
