@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 export default function Header() {
   const navLinks = [
     { label: "Projects", target: "projects-section" },
+    { label: "Experience", target: "experience-section" },
     { label: "Contact", target: "contact-section" },
   ];
 
@@ -42,7 +43,7 @@ export default function Header() {
         </motion.div>
 
         <nav>
-          <ul className="flex list-none gap-10">
+          <ul className="flex list-none gap-5 sm:gap-10">
             {navLinks.map((item, i) => (
               <motion.li
                 key={item.label}

@@ -53,6 +53,24 @@ export default function Projects() {
             </Link>
           </div>
         </motion.article>
+
+        <motion.article
+          className="mt-12 rounded-2xl border border-gray-200 bg-white p-6 sm:p-8 shadow-sm"
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+        >
+          <div className="flex flex-col sm:flex-row sm:justify-between gap-4">
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-widest text-gray-500">In development · React / Vite</p>
+              <h3 className="mt-2 font-bold text-xl text-gray-800">ORBIT</h3>
+              <p className="mt-2 text-gray-600 max-w-2xl leading-relaxed">
+                Space Debris Monitoring &amp; Collision Awareness — an interactive dashboard concept for exploring orbital objects, trajectories, and potential close approaches.
+              </p>
+            </div>
+            <span className="self-start whitespace-nowrap text-xs rounded-full border border-gray-300 px-3 py-2 text-gray-600">Work in progress</span>
+          </div>
+        </motion.article>
       </div>
     </section>
   );

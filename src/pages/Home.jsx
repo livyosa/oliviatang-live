@@ -3,6 +3,7 @@ import { useLocation, useNavigate } from "react-router-dom";
 import Header from "../components/home/Header";
 import Hero from "../components/home/Hero";
 import Projects from "../components/home/Projects";
+import Experience from "../components/home/Experience";
 import Contact from "../components/home/Contact";
 import Footer from "../components/home/Footer";
 
@@ -27,6 +28,7 @@ export default function Home() {
       <Header />
       <Hero />
       <Projects />
+      <Experience />
       <Contact />
       <Footer />
     </>
