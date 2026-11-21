@@ -6,7 +6,7 @@ export default function Hero() {
   };
 
   return (
-    <section className="relative pt-36 pb-28 bg-[#fafafa] overflow-hidden">
+    <section className="relative pt-24 pb-28 bg-[#fafafa] overflow-hidden">
       <div className="max-w-[62.5rem] mx-auto px-6">
         <motion.div
           className="max-w-3xl"
